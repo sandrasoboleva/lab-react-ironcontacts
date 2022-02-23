@@ -86,6 +86,9 @@ function App() {
               <td>{Math.round((props.popularity * 100) / 100)}</td>
               <td>{props.wonOscar ? "🏆" : ""}</td>
               <td>{props.wonEmmy ? "🏆" : ""}</td>
+              <td>
+              <button onClick={() => deleteContact(contact)}>Delete</button>
+              </td>
             </tr>
           );
         })}
